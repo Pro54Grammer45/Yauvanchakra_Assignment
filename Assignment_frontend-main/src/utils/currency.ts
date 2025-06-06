@@ -1,3 +1,4 @@
+"use client";
 // eslint-disable-next-line no-unused-expressions
 [
   { cc: "AED", symbol: "\u062f.\u0625;", name: "UAE dirham" },

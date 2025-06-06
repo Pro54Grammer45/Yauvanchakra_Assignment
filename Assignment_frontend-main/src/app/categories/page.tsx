@@ -35,10 +35,12 @@ import CategoryTable from "@/components/category/CategoryTable";
 import NotFound from "@/components/table/NotFound";
 import AnimatedContent from "@/components/common/AnimatedContent";
 
+import type { Category } from "@/types/category";
+
 // Define types for category data if possible, otherwise use 'any'
 type CategoryType = {
   _id: string;
-  children?: CategoryType[];
+  children?: Category[];
   [key: string]: any;
 };
 
@@ -103,7 +105,7 @@ const Category = () => {
       />
 
       <MainDrawer>
-        <CategoryDrawer id={serviceId} data={data} />
+        <CategoryDrawer id={serviceId} data={undefined} />
       </MainDrawer>
 
       <AnimatedContent>
@@ -246,7 +248,6 @@ const Category = () => {
             </TableHeader>
 
             <CategoryTable
-              data={data}
               lang={lang}
               isCheck={isCheck}
               categories={dataTable}

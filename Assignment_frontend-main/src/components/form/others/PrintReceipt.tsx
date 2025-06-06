@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useState } from "react";
 import { FiPrinter } from "react-icons/fi";
 import { useReactToPrint } from "react-to-print"; // Make sure react-to-print is compatible with this usage

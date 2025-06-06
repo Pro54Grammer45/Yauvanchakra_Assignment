@@ -1,3 +1,4 @@
+"use client";
 const categories = [
   {
     _id: '61b0d3975741dd2e949d53f9',

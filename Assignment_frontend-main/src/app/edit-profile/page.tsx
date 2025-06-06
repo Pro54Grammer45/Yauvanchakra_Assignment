@@ -1,3 +1,4 @@
+"use client";
 import React, { useContext } from "react";
 import { Button } from "@windmill/react-ui";
 import { useTranslation } from "react-i18next";

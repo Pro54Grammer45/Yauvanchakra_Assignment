@@ -6,6 +6,7 @@ import { TableCell, TableBody, TableRow } from '@windmill/react-ui';
 import Status from '@/components/table/Status';
 import SelectStatus from '@/components/form/selectOption/SelectStatus';
 import useUtilsFunction from '@/hooks/useUtilsFunction';
+import { Order } from '@/types/order';
 
 /* ------------------------------------------------------------------ */
 /*                       Domain / Shared Interfaces                   */
@@ -26,7 +27,7 @@ interface OrderItem {
 }
 
 interface CustomerOrderTableProps {
-  orders: OrderItem[];
+  orders: Order[];
 }
 
 /* Return type of utils hook (simplified) */

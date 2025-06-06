@@ -1,6 +1,7 @@
+
 import { redirect } from 'next/navigation';
 
 export default function Page() {
-  redirect('/login');
-  // redirect('/dashboard')
+  // redirect('/login');
+  redirect('/dashboard')
 }

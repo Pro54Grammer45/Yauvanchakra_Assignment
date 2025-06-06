@@ -1,3 +1,4 @@
+"use client";
 import { Textarea } from "@windmill/react-ui";
 import React from "react";
 import { UseFormRegister } from "react-hook-form";

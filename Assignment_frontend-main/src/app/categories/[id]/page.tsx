@@ -208,7 +208,6 @@ import {
   
               <CategoryTable
                 categories={dataTable}
-                data={data}
                 lang={lang}
                 isCheck={isCheck}
                 setIsCheck={setIsCheck}

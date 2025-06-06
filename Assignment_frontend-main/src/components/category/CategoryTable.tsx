@@ -27,8 +27,8 @@ export interface Category {
   name: string | Localised;
   description?: string | Localised;
   icon?: string;
-  status: 'active' | 'inactive' | boolean;        // adjust as needed
-  children: Category[];                           // one-level deep
+  status: 'active' | 'inactive' | boolean; // adjust as needed
+  children: Category[];  // one-level deep
 }
 
 interface UtilsHook {
@@ -52,12 +52,12 @@ interface ToggleDrawerHook {
 
 interface CategoryTableProps {
   // Removed 'data: unknown' as it was causing the type mismatch and isn't used as an array here
-  lang: string;                      // current i18n locale
-  isCheck: string[];                 // selected ids
+  lang: string; // current i18n locale
+  isCheck: string[]; // selected ids
   setIsCheck: (ids: string[]) => void;
   categories: Category[];
-  useParamId: string;                // param for DeleteModal
-  showChild?: boolean;               // toggle nested display
+  useParamId: string;// param for DeleteModal
+  showChild?: boolean;  // toggle nested display
 }
 
 /* ------------------------------------------------------------------ */

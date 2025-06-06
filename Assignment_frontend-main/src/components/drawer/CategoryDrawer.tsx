@@ -21,14 +21,8 @@ import CategoryServices from "@/services/CategoryServices";
 import DrawerButton from "@/components/form/button/DrawerButton";
 import useUtilsFunction from "@/hooks/useUtilsFunction";
 
-export interface Category {
-  _id: string;
-  name: string | { [lang: string]: string | undefined };
-  description?: string | { [lang: string]: string | undefined };
-  icon?: string;
-  status: 'active' | 'inactive' | boolean;
-  children: Category[];
-}
+import { Category } from "@/types/category";
+
 
 // Add type definitions for props
 interface CategoryDrawerProps {

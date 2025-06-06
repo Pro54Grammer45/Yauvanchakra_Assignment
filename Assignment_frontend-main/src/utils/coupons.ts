@@ -1,3 +1,4 @@
+"use client";
 const coupons = [
   {
     _id: '612a3805ea43af2750ca33ba',

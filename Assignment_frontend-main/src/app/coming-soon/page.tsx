@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import progress from "@/assets/img/progress.svg";
 import { FC } from "react";

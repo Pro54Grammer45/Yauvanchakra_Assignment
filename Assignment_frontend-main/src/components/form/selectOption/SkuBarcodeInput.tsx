@@ -1,3 +1,4 @@
+"use client";
 import { Input } from "@windmill/react-ui";
 import React from "react";
 

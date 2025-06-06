@@ -1,3 +1,4 @@
+"use client";
 import requests from "./httpService";
 
 const CustomerServices = {

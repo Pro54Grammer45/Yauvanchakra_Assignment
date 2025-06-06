@@ -80,7 +80,7 @@ import {
     return (
       <>
         <MainDrawer product>
-          <ProductDrawer />
+          <ProductDrawer id="" currency={undefined}/>
         </MainDrawer>
   
         <PageTitle>{t("ProductDetails")}</PageTitle>

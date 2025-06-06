@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import SelectLanguageTwo from "@/components/form/selectOption/SelectLanguageTwo";
 import { UseFormRegister } from "react-hook-form";

@@ -1,3 +1,4 @@
+"use client";
 import axios, { AxiosRequestConfig, AxiosResponse, InternalAxiosRequestConfig } from "axios";
 import Cookies from "js-cookie";
 

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { useContext } from "react";
 import { Button } from "@windmill/react-ui";

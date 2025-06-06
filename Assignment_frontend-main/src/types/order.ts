@@ -1,3 +1,4 @@
+"use client";
 export interface Order {
     _id: string;
     invoice: string;
@@ -7,6 +8,7 @@ export interface Order {
         [key: string]: any;
     };
     paymentMethod: string;
+    createdAt: string | Date;
     total: number;
     status: 'Delivered' | 'Pending' | 'Processing' | 'Cancel'; // Union type
 }

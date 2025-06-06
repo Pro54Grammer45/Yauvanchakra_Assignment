@@ -1,3 +1,4 @@
+"use client";
 const customers = [
   {
     _id: '619f77b553cc5a1858ef366b',

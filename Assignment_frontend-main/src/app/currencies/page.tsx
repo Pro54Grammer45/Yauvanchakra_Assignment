@@ -1,3 +1,4 @@
+"use client";
 import {
     Button,
     Card,
@@ -205,7 +206,7 @@ import {
             </TableContainer>
           )
         )}
-        {!loading && data.length === 0 && !error && (
+        {!loading && data && data.length === 0 && !error && (
           <NotFound title="Sorry, There are no currency right now." />
         )}
       </>

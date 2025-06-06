@@ -1,3 +1,4 @@
+"use client";
 import i18n from "i18next";
 import Cookies from "js-cookie";
 import LanguageDetector from "i18next-browser-languagedetector";

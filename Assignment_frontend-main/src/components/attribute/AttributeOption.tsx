@@ -1,3 +1,4 @@
+"use client";
 import Multiselect from "multiselect-react-dropdown";
 import { useEffect, useState, useRef, RefObject } from "react";
 import useUtilsFunction from "@/hooks/useUtilsFunction";

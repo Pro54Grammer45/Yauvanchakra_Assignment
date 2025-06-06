@@ -1,3 +1,4 @@
+"use client";
 const orders = [
   {
     _id: '612abc3695aeaf0016ab4ff3',

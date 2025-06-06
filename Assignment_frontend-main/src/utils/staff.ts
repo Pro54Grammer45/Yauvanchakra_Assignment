@@ -1,3 +1,4 @@
+"use client";
 const admins = [
   {
     _id: '619f77b653cc5a1858ef3679',
