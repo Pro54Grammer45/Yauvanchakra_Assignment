@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "nodejs-es6-convertor": {
+      "command": "node",
+      "args": [
+        "C:/Users/yauva/Desktop/BeAthah/ai-agents/nodejs-es6-converter.js"
+      ]
+    }
+  }
+} 
