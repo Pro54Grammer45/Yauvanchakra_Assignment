@@ -51,8 +51,9 @@ export default function ClientLayout({ children }) {
             <SidebarProvider>
               <Suspense fallback={<ThemeSuspense />}>
                 <Windmill usePreferences theme={myTheme}>
-                  <Header />
+                  <Header >
                   {children}
+                  </Header>
                 </Windmill>
               </Suspense>
             </SidebarProvider>

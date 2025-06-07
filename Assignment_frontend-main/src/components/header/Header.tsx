@@ -58,6 +58,13 @@ const Header: React.FC = () => {
   const [profileOpen, setProfileOpen] = useState<boolean>(false);
   const [notificationOpen, setNotificationOpen] = useState<boolean>(false);
 
+  const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
+  const toggleLangDropdown = () => {
+    setIsLangDropdownOpen((prev) => !prev);
+    setProfileOpen(false); // Close profile dropdown if open
+    setNotificationOpen(false); // Close notification dropdown if open
+  };
+
   const handleLogOut = () => {
     dispatch({ type: "USER_LOGOUT" });
     Cookies.remove("adminInfo");
@@ -173,7 +180,7 @@ const Header: React.FC = () => {
           <ul className="flex justify-end items-center flex-shrink-0 space-x-6">
             <li className="changeLanguage">
               <div className="dropdown">
-                <button className="dropbtn focus:outline-none flex">
+                <button className="dropbtn focus:outline-none flex" onClick={toggleLangDropdown}>
                   <div
                     className={`text-sm flag ${currLang?.flag?.toLowerCase()}`}
                   ></div>{" "}
@@ -184,7 +191,11 @@ const Header: React.FC = () => {
                     {currLang?.iso_code}
                   </span>
                 </button>
-                <SelectLanguage handleLanguageChange={handleLanguageChange} />
+                {isLangDropdownOpen && (
+                  <div className="origin-top-right absolute md:right-0 top-full rounded-md shadow-lg bg-white dark:bg-gray-800 focus:outline-none z-50"> 
+                    <SelectLanguage handleLanguageChange={handleLanguageChange} />
+                  </div>
+                )}
               </div>
             </li>
 

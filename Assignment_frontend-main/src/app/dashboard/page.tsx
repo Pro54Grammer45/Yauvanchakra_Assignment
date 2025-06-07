@@ -68,13 +68,13 @@ const Dashboard: React.FC = () => {
   const [yesterdayCardPayment, setYesterdayCardPayment] = useState<number>(0);
   const [yesterdayCreditPayment, setYesterdayCreditPayment] = useState<number>(0);
 
-  // --- FIX APPLIED HERE ---
+  
   const fetchRecentOrders = useCallback(async () => {
     return OrderServices.getDashboardRecentOrder({ page: currentPage, limit: 8 });
   }, [currentPage]); // Only re-create if currentPage changes
 
   const { data: dashboardRecentOrder, loading: loadingRecentOrder, error } = useAsync(fetchRecentOrders);
-  // --- END FIX ---
+  
 
 
   const { data: bestSellerProductChart, loading: loadingBestSellerProduct } = useAsync(
