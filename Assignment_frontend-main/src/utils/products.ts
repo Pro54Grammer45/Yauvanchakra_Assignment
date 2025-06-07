@@ -1,4 +1,4 @@
-"use client";
+
 const products = [
   {
     _id: '61c355337f19aa31349af4fe',

@@ -1,4 +1,4 @@
-"use client";
+
 // Next.js 15 uses the /app or /pages directory for routing.
 // The routes array and React.lazy imports are not needed.
 // Only routeAccessList is kept for access control or sidebar usage.

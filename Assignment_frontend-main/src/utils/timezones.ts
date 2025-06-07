@@ -1,4 +1,4 @@
-"use client";
+
 const timeZone = [
   {
     value: "Dateline Standard Time",

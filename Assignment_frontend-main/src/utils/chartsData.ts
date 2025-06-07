@@ -1,4 +1,4 @@
-"use client";
+
 export const doughnutLegends = [
   { title: "Fresh Vegetable", color: "bg-emerald-500" },
   { title: "Cooking Essentials", color: "bg-blue-500" },

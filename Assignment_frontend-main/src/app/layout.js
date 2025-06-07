@@ -5,10 +5,10 @@ import ClientLayout from "./clientLayout"; // Import the client component
 import Head from 'next/head';
 
 export const metadata = {
-  title: "D origin Admin",
+  title: "Yauvanchakra Internship Assignment",
   description: "Born again, naturally",
   icons: {
-    icon: "/Favicon.png",
+    icon: "/vercel.svg",
   },
 };
 

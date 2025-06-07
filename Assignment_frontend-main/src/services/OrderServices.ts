@@ -1,4 +1,4 @@
-"use client";
+
 import requests from "./httpService";
 
 const OrderServices = {

@@ -1,4 +1,4 @@
-"use client";
+
 export interface Order {
     _id: string;
     invoice: string;

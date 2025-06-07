@@ -1,4 +1,4 @@
-"use client";
+
 import storage from "redux-persist/lib/storage";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 

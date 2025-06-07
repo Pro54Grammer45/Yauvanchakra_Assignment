@@ -1,5 +1,5 @@
 
-"use client"; import axios from "axios";
+import axios from "axios";
 
 const TextTranslateServices = {
   translateText: async (text: any, translateFrom: any, translateTo: any,key: any) => {
