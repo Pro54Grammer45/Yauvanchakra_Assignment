@@ -1,6 +1,14 @@
 import { redirect } from 'next/navigation';
+import { cookies } from 'next/headers';
 
 export default function Page() {
-  // redirect('/login');
-  redirect('/dashboard')
+  const cookieStore = cookies();
+  const isAuthenticated = cookieStore.get('adminInfo');
+  if (isAuthenticated) {
+    // If the 'adminInfo' cookie exists, redirect to the dashboard
+    redirect('/dashboard');
+  } else {
+    // Otherwise, redirect to the login page
+    redirect('/login');
+  }
 }
